@@ -17,7 +17,7 @@ function App3() {
 
     useEffect(() => {
         
-        let ws = new WebSocket("ws://13.51.56.4:8080");
+        let ws = new WebSocket("wss://13.51.56.4:8080");
         ws.onopen = () => {
             setSocket(ws);
         }
