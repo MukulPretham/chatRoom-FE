@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+
 import { createRoot } from 'react-dom/client'
 import { RecoilRoot } from 'recoil'
 import './index.css'
@@ -10,7 +10,7 @@ import {
 import CreateRoom from './components/CreateRoom.tsx'
 import JoinRoom from './components/JoinRoom.tsx'
 import ChatRoom from './components/ChatRoom.tsx'
-import App from './App.tsx'
+
 
 const router = createBrowserRouter([
   {

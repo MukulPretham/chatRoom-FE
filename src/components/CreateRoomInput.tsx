@@ -1,5 +1,5 @@
 import { useRecoilValue, useSetRecoilState } from "recoil"
-import { InputBoxStyles, buttonStyles, inputStyles } from "./InputName"
+import { InputBoxStyles, inputStyles } from "./InputName"
 import { newRoomIDAtom } from "../atoms/newRoomID"
 
 const CreateRoomInput = () => {

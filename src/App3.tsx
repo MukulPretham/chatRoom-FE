@@ -1,23 +1,18 @@
 import "./App.css"
-import { useRecoilValue, useSetRecoilState } from "recoil";
-import { joinAtom } from "./atoms/join";
+import { useSetRecoilState } from "recoil";
 import { Outlet } from "react-router";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { socketAtom } from "./atoms/socket";
 import { messagesAtom } from "./atoms/messages";
 import { chatAtom } from "./atoms/chat";
 
-type Message = {
-    sender: string,
-    message: string
-}
+
 
 function App3() {
 
     let setMessages = useSetRecoilState(messagesAtom);
 
     let setSocket = useSetRecoilState<WebSocket | null>(socketAtom);
-    let socket = useRecoilValue<WebSocket | null>(socketAtom);
     let setChat = useSetRecoilState(chatAtom);
 
     useEffect(() => {
